@@ -122,8 +122,6 @@ class Tictactoe(object):
             self.num_empty -= 1
             won = self.checkWinning()
             return won
-            #if ( won == 1 ):
-             #   print "O won the game!"
 
     def putX(self, row, col):
         if not ( self.board[row][col] == ""):
@@ -133,8 +131,6 @@ class Tictactoe(object):
             self.num_empty -= 1
             won = self.checkWinning()
             return won
-            #if ( won == -1 ):
-             #   print "X won the game!"
     def remove(self, row, col):
         if ( self.board[row][col] == ""):
             raise ValueError("already empty spot!")
@@ -181,7 +177,7 @@ class Tictactoe(object):
             return -1
         elif ( diag == "XXX" or rdiag == "XXX" ):
             return 1
-        return 0 # no won has won yet
+        return 0 # no one has won yet
 
 
 if __name__ == '__main__':
