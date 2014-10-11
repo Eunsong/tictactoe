@@ -184,8 +184,9 @@ class Tictactoe(object):
         return 0 # no won has won yet
 
 
-game = Tictactoe()
-game.play()
+if __name__ == '__main__':
+    game = Tictactoe()
+    game.play()
 
 
     
